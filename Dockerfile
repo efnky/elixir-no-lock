@@ -1,4 +1,4 @@
-FROM hexpm/elixir:1.20.1-erlang-27.2-debian-bookworm-20241016-slim AS builder
+FROM hexpm/elixir:1.17.3-erlang-27.2-debian-bookworm-20241016-slim AS builder
 WORKDIR /app
 ENV MIX_ENV=prod
 RUN mix local.hex --force && mix local.rebar --force
